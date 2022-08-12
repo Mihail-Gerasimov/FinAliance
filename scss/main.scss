@@ -91,7 +91,7 @@ button {
         cursor: pointer !important;
         border: 0;
         outline: none;
-        transform: scale(1.1);
+        transform: scale(1.06);
         transition: .3s;
         color: #ffffff !important;
     }
@@ -170,6 +170,11 @@ button {
     background-color: #FFFFFF;
     border: 1px solid #08A652;
     color: #111313;
+
+    &:hover {
+        border: 1px solid #08A652;
+        color: #111313 !important;
+    }
 }
 
 .title-qestion {
@@ -274,8 +279,12 @@ button {
     }
 }
 
+body {
+    position: relative;
+}
+
 .quiz {
-    position: fixed;
+    position: absolute;
     top: 85px;
     left: 50%;
     transform: translateX(-50%);
@@ -292,7 +301,7 @@ button {
 .quiz__main {
     min-height: 550px;
     width: 100%;
-    max-width: 1135px;
+    max-width: 1160px;
     margin: 0 auto;
 }
 
@@ -303,10 +312,75 @@ button {
     line-height: 36px;
     text-align: center;
     max-width: 920px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 .close {
     right: 65px;
     top: 40px;
+}
+
+.pagination__element {
+    background-color: #08A652;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-right: 17px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.pagination__active {
+    width: 18px;
+    height: 18px;
+}
+
+.pagination {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.form {
+    margin-bottom: 60px;
+    min-height: 160px;
+
+}
+
+.quiz-btn {
+    max-width: 235px;
+}
+
+.label {
+    position: relative;
+    width: 365px;
+    height: fit-content;
+    margin: 10px 10px;
+}
+
+.input-question {
+    margin: 0;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.text-question {
+    padding: 25px 0 25px 25px;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: #FFFFFF;
+    border: 1px solid #08A652;
+    border-radius: 5px;
+}
+
+.input-question:checked+.text-question {
+    background-color: #08A652;
+    color: #ffffff;
 }
