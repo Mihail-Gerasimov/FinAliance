@@ -227,3 +227,42 @@ button {
         bottom: -93px;
     }
 }
+
+.advantages {
+    background-color: #ffffff;
+    margin-bottom: 34px;
+
+    .advantages__element {
+
+        img {
+            margin-right: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+}
+
+.footer {
+    padding: 35px 0;
+
+    &__main {
+        a {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: #111313;
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            max-width: 1300px;
+        }
+    }
+}
