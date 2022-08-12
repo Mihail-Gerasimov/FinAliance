@@ -122,11 +122,13 @@
         </div>
     </footer>
 
-    <div class="quiz">
+    <!-- скрить quiz - перед ласт-степ -->
+
+    <div style="display: none;" class="quiz">
 
         <button class="close position-absolute"><img src="./img/close.svg" alt=""></button>
 
-        <!-- что бы скопировать вопросы, копируется блок ниже этого комментария!!! -->
+        <!-- что бы скопировать вопросы, копируется блок quiz__main!!! -->
         <div style="" class="quiz__main position-relative ">
             <h3 class="title-quiz mx-auto">Мы уже подобрали для Вас выгодный кредит.
                 Что бы его получить, оставьте контакты</h3>
@@ -171,6 +173,54 @@
                 <div class="pagination__element"></div>
             </div>
         </div>
+        <!-- что бы скопировать вопросы, копируется блок quiz__main!!! -->
+
+    </div>
+    <!-- скрить quiz - перед ласт-степ -->
+
+
+    <!-- ласт-степ -->
+    <div style="display:none;" class="quiz-last">
+
+        <button class="close position-absolute"><img src="./img/close.svg" alt=""></button>
+
+        <!-- скрывается перед thanks -->
+        <div style="display:none;" class="quiz__main--last position-relative ">
+            <h3 class="title-quiz mx-auto">Мы уже подобрали для Вас выгодный кредит.
+                Что бы его получить, оставьте контакты</h3>
+
+            <form class="last-form d-flex flex-column align-items-center" action="">
+                <input placeholder="Имя" type="text" class="input mb-4">
+                <input placeholder="Телефон" type="text" class="input mb-4">
+                <button class="btn btn-g btn-last">Отправить заявку</button>
+            </form>
+
+            <div class="pagination position-absolute d-flex align-items-center">
+                <div class="pagination__element"></div>
+                <div class="pagination__element"></div>
+                <div class="pagination__element"></div>
+                <div class="pagination__element"></div>
+                <div class="pagination__element"></div>
+                <div class="pagination__element"></div>
+                <div class="pagination__element"></div>
+                <div class="pagination__element pagination__active"></div>
+                <div class="pagination__element"></div>
+            </div>
+        </div>
+        <!-- скрывается перед thanks -->
+
+        <!--thanks -->
+        <div style="display:none;"
+            class="thanks d-flex align-items-center justify-content-center flex-column flex-lg-row">
+            <div class="thanks-main me-0 me-lg-5 mb-4 mb-lg-0">
+                <h4 class="thanks-title mb-4 text-center">Спасибо!</h4>
+                <p class="thanks-description text-center">Наши менеджеры свяжутся
+                    с вами в ближайшее время
+                    Вам позвонят с +7 (917) 493-11-53</p>
+            </div>
+            <img class="thanks-man" src="./img/thanks.png" alt="">
+        </div>
+        <!--thanks -->
 
     </div>
 

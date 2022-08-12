@@ -2,6 +2,10 @@
     .quiz {
         max-width: 1400px;
     }
+
+    .quiz-last {
+        max-width: 1400px;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -25,6 +29,10 @@
     }
 
     .quiz {
+        max-width: 1200px;
+    }
+
+    .quiz-last {
         max-width: 1200px;
     }
 }
@@ -67,6 +75,12 @@
         max-width: 990px;
     }
 
+    .quiz-last {
+        min-height: 650px;
+        padding: 100px 0 0;
+        max-width: 990px;
+    }
+
     .close {
         right: 25px;
         top: 25px;
@@ -91,6 +105,29 @@
 
     .quiz__main {
         min-height: 500px;
+    }
+
+    .quiz__main--last {
+        min-height: 500px;
+    }
+
+    .thanks {
+        margin-top: 70px;
+    }
+
+    .thanks-title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .thanks-description {
+        font-size: 25px;
+        line-height: 30px;
+        max-width: 420px;
+    }
+
+    .thanks-man {
+        max-width: 400px;
     }
 }
 
@@ -158,6 +195,12 @@
         max-width: 550px;
     }
 
+    .quiz-last {
+        min-height: 568px;
+        padding: 80px 15px 0;
+        max-width: 550px;
+    }
+
     .close {
         width: 30px;
         right: 50%;
@@ -168,6 +211,10 @@
 
     .quiz__main {
         min-height: 780px;
+    }
+
+    .quiz__main--last {
+        min-height: 450px;
     }
 
     .title-quiz {
@@ -205,6 +252,14 @@
 
     .quiz-btn {
         max-width: 100%;
+    }
+
+    .thanks {
+        margin-top: 30px;
+    }
+
+    .thanks-man {
+        max-width: 300px;
     }
 }
 
@@ -246,6 +301,31 @@
     .quiz {
         top: 65px;
         max-width: 375px;
+    }
+
+    .last-form .input {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 20px 0 20px 20px;
+    }
+
+    .quiz__main--last {
+        min-height: 410px;
+    }
+
+    .quiz-last {
+        min-height: 530px;
+    }
+
+    .thanks-title {
+        font-size: 31px;
+        line-height: 120%;
+    }
+
+    .thanks-description {
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 300px;
     }
 }
 
